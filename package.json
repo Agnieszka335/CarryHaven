@@ -11,8 +11,6 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-      "build": "webpack",
-  "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sass src/scss:dist/css --watch"
   },
