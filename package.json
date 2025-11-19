@@ -12,7 +12,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "sass src/scss:dist/css --watch"
+    "dev": "sass src/scss:dist/css --watch",
+    "build": "sass src/scss:dist/css"
   },
   "devDependencies": {
     "sass": "^1.94.1"
