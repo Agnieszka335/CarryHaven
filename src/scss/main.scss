@@ -1,8 +1,11 @@
 @import "./base/reset";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 @import "./components/buttons";
 @import "./base/fonts";
 @import "./components/common";
 @import "./layouts/header.scss";
 @import "./layouts/footer.scss";
 @import "./pages/home";
+@import "./pages/catalog";
+@import "./pages/about";
