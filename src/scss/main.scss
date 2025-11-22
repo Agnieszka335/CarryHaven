@@ -1,3 +1,8 @@
-body {
-  background: blue;
-}
+@import "./base/reset";
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./base/fonts";
+@import "./components/common";
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+@import "./pages/home";
