@@ -4,17 +4,17 @@ const routes = {
   "/about": "./html/about.html",
   "/contact": "./html/contact.html",
   "/cart": "./html/cart.html",
+  "/user": "./html/user.html",
 };
-
 
 function loadPage() {
   const hash = location.hash.replace("#", "");
-  const path = hash || "/"; 
+  const path = hash || "/";
   const page = routes[path];
 
   fetch(page)
-    .then(response => response.text())
-    .then(html => {
+    .then((response) => response.text())
+    .then((html) => {
       document.getElementById("content").innerHTML = html;
     })
     .catch(() => {
