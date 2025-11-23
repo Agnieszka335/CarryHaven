@@ -16,8 +16,7 @@
       p {
         color: $body-color;
         max-width: 520px;
-        margin-bottom: 18px;
-        margin: 16px 8px;
+        margin: 16px 8px 18px;
         padding: 20px 0;
       }
     }
@@ -45,7 +44,6 @@
     display: flex;
     background: $body-bg;
     border-radius: 12px;
-    box-shadow: 2px 2px 2px #ffff;
     overflow: hidden;
     box-shadow: 2px 4px 8px #00000036;
     .promo-left {

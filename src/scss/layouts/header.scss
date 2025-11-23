@@ -11,6 +11,13 @@ header {
   .container {
     padding-bottom: 40px;
     border-bottom: 1px solid $line-color;
+      display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 1000px) {
+    height: 70px;
+  }
   }
 }
 
@@ -63,15 +70,7 @@ header {
   letter-spacing: 3.28px;
   padding: 22px;
 }
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  @media screen and (max-width: 1000px) {
-    height: 70px;
-  }
-}
 .nav-list {
   gap: 10px;
   display: flex;
@@ -89,25 +88,6 @@ header .container {
   color: $accent-color;
   border-bottom: 4px solid $accent-color;
 }
-
-.hamburger {
-  position: absolute;
-  position: fixed;
-  transform: translate(-60px, -17px);
-  font-size: 25px;
-  padding: 5px 15px;
-  border: 0;
-  border-radius: 6px;
-  background-color: #ffffff55;
-  color: blue;
-  z-index: 1;
-
-  @media screen and (min-width: 1000px) {
-    display: none;
-  }
-}
-
-
 
 
 @media (max-width: $bp-lg) {

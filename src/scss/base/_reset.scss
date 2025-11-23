@@ -16,7 +16,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -307,27 +306,11 @@ input::-moz-focus-inner {
  * 2. Improve readability and alignment in all browsers.
  */
 
-textarea {
-    overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
-}
 
 /**
  * Remove most spacing between table cells.
  */
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
 
 
 ::-moz-selection {
@@ -342,21 +325,4 @@ textarea {
 
 img {
     vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }

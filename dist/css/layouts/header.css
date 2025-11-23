@@ -9,6 +9,14 @@ header {
 header .container {
   padding-bottom: 40px;
   border-bottom: 1px solid #727174;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  header .container {
+    height: 70px;
+  }
 }
 
 .logo a {
@@ -57,17 +65,6 @@ header .container {
   padding: 22px;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 1000px) {
-  header .container {
-    height: 70px;
-  }
-}
-
 .nav-list {
   gap: 10px;
   display: flex;
@@ -86,24 +83,6 @@ header .container {
 .nav-list li a:hover {
   color: #B92770;
   border-bottom: 4px solid #B92770;
-}
-
-.hamburger {
-  position: absolute;
-  position: fixed;
-  transform: translate(-60px, -17px);
-  font-size: 25px;
-  padding: 5px 15px;
-  border: 0;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.3333333333);
-  color: blue;
-  z-index: 1;
-}
-@media screen and (min-width: 1000px) {
-  .hamburger {
-    display: none;
-  }
 }
 
 @media (max-width: 1440px) {
