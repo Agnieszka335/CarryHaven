@@ -1,17 +1,166 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |   background-color: $body-bg;
- *   |                     ^^^^^^^^
- *   '
- *   src\scss\layouts\header.scss 4:21  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    background-color: $body-bg;\d\a   \2502                      ^^^^^^^^\a   \2575 \a   src\\scss\\layouts\\header.scss 4:21  root stylesheet";
+header {
+  padding: 20px 8px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+header .container {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #727174;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #B92770;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.logo a img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.icons a {
+  color: #000000;
+  padding: 0 10px;
+}
+.icons a i {
+  font-size: 20px;
+}
+.icons a i:hover {
+  color: #B92770;
+  transition: all 0.1s ease-in-out;
+}
+
+.img {
+  width: 30px;
+  background-color: #B92770;
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3.28px;
+  padding: 22px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  header .container {
+    height: 70px;
+  }
+}
+
+.nav-list {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 70px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+}
+@media screen and (max-width: 1000px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.nav-list li a:hover {
+  color: #B92770;
+  border-bottom: 4px solid #B92770;
+}
+
+.hamburger {
+  position: absolute;
+  position: fixed;
+  transform: translate(-60px, -17px);
+  font-size: 25px;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.3333333333);
+  color: blue;
+  z-index: 1;
+}
+@media screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo a {
+    font-size: 26px;
+  }
+  .logo a img {
+    height: 34px;
+  }
+  .nav-list a {
+    font-size: 10px;
+    padding: 18px;
+  }
+  .icons a i {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 6px;
+  }
+  header .container {
+    padding-bottom: 20px;
+    height: 70px;
+  }
+  .logo a {
+    font-size: 22px;
+  }
+  .logo a img {
+    height: 32px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    transform: translate(-40px, -10px);
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px 4px;
+  }
+  header .container {
+    padding-bottom: 10px;
+    height: 60px;
+  }
+  .logo a {
+    font-size: 20px;
+  }
+  .logo a img {
+    height: 28px;
+  }
+  .icons a i {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

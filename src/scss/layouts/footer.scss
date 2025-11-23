@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 footer {
   font-family: "Montserrat", sans-serif;
   color: #333;
@@ -83,7 +85,7 @@ footer {
 }
 
 .footer-contact {
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .footer-contact h3 {
@@ -136,4 +138,112 @@ footer {
   text-align: center;
   margin: 40px 0;
   color: #00000059;
+}
+
+@media (max-width: $bp-lg) {
+  .footer-top .footer-cards {
+    padding: 0 40px;
+  }
+
+  .footer-info-columns {
+    gap: 100px;
+  }
+
+  .footer-contact {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .footer-top {
+    padding: 30px 0;
+  }
+
+  .footer-top .footer-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .footer-top .card {
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      padding-bottom: 20px;
+    }
+  }
+
+  .footer-middle-wrapper {
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .footer-info-columns {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .footer-contact {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .footer-title {
+    padding-left: 20px;
+  }
+
+  .footer-top .footer-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .footer-top .footer-cards {
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 20px;
+  }
+
+  .footer-top .card img {
+    width: 45px;
+  }
+
+  .footer-top .card {
+    p {
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  }
+
+  .footer-info-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column a {
+    font-size: 14px;
+  }
+
+  .footer-contact p {
+    font-size: 14px;
+  }
+
+  .contact-sections {
+    > section {
+      flex: 0 0 100%;
+    }
+  }
+
+  .copyright {
+    margin: 25px 0;
+    font-size: 14px;
+  }
 }

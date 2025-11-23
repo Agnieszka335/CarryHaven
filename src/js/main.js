@@ -3,6 +3,7 @@ const routes = {
   "/catalog": "./html/catalog.html",
   "/about": "./html/about.html",
   "/contact": "./html/contact.html",
+  "/cart": "./html/cart.html",
 };
 
 

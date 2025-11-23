@@ -20,7 +20,6 @@
         margin: 16px 8px;
         padding: 20px 0;
       }
-   
     }
     .hero-image {
       flex: 1;
@@ -49,49 +48,49 @@
     box-shadow: 2px 2px 2px #ffff;
     overflow: hidden;
     box-shadow: 2px 4px 8px #00000036;
-   .promo-left {
-  flex: 1;                  
-  display: flex;
-  flex-direction: column;   
-  justify-content: center;  
-  padding: 40px;
-  font-size: 20px;          
-  line-height: 1.6;
+    .promo-left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      font-size: 20px;
+      line-height: 1.6;
 
-  h3 {
-    font-size: 36px;        
-    margin: 20px 0;
-    font-weight: 800;
-  }
+      h3 {
+        font-size: 36px;
+        margin: 20px 0;
+        font-weight: 800;
+      }
 
-  p {
-    font-size: 20px;
-    max-width: 500px;
-    margin: 0 0 20px;
-  }
+      p {
+        font-size: 20px;
+        max-width: 500px;
+        margin: 0 0 20px;
+      }
 
-  .author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+      .author {
+        display: flex;
+        align-items: center;
+        gap: 15px;
 
-    .avatar {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
+        .avatar {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        strong {
+          font-size: 22px;
+        }
+
+        .role {
+          font-size: 16px;
+          opacity: 0.7;
+        }
+      }
     }
-
-    strong {
-      font-size: 22px;
-    }
-
-    .role {
-      font-size: 16px;
-      opacity: 0.7;
-    }
-  }
-}
     .promo-right {
       flex: 1;
       position: relative;
@@ -106,22 +105,21 @@
         align-items: center;
 
         &::after {
-    content: "";
-    position: absolute;
-    inset: 0;                       
-    background: rgba(0, 0, 0, 0.45); 
-    z-index: 1;
-  }
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.45);
+          z-index: 1;
+        }
 
-  > * {
-    position: relative;
-    z-index: 2;
-  }
-       
+        > * {
+          position: relative;
+          z-index: 2;
+        }
+
         .promo-overlay {
           color: #fff;
           padding: 50px;
-       
 
           p {
             padding: 50px 0;
@@ -137,7 +135,6 @@
             color: #fff;
             border-radius: 6px;
             text-decoration: none;
-            
           }
         }
       }
@@ -179,17 +176,16 @@
 
   .card-media {
     position: relative;
-    height: 650px;                 
+    height: 650px;
     background-size: cover;
     background-position: center;
     display: flex;
 
-    
     &::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.45); 
+      background: rgba(0, 0, 0, 0.45);
       z-index: 1;
     }
 
@@ -214,7 +210,6 @@
     }
   }
 }
-
 
 .pink {
   color: $accent-color;
@@ -280,17 +275,15 @@
     padding: 0 30px;
     overflow: hidden;
 
-    
     &::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.452); 
+      background: rgba(0, 0, 0, 0.452);
       z-index: 1;
       border-radius: 3px;
     }
 
-    
     .left-content,
     .right-content {
       position: relative;
@@ -330,24 +323,18 @@
       .btn {
         width: 150px;
         padding: 16px 8px;
-      
       }
     }
   }
 }
 
-
-
-
-/* testimonials */
 .testimonial {
   background: $body-bg;
   border-radius: 3px;
   padding: 50px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.255);
-  margin: 20px 0 100px; 
-
+  margin: 20px 0 100px;
 
   .avatar {
     width: 64px;
@@ -369,5 +356,120 @@
     color: $accent-color;
     font-weight: 800;
     font-size: 18px;
+  }
+}
+
+@media (max-width: $bp-lg) {
+  .hero .hero-inner {
+    gap: 30px;
+  }
+
+  .promo .promo-card {
+    flex-direction: column;
+  }
+
+  .grid-4,
+  .grid-3 {
+    gap: 20px;
+  }
+
+  .big-banner .banner-inner {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: $bp-md) {
+  .hero .hero-inner {
+    flex-direction: column;
+    text-align: center;
+
+    .hero-text {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        max-width: none;
+      }
+    }
+
+    .hero-image img {
+      max-width: 500px;
+    }
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .promo .promo-card {
+    text-align: center;
+
+    .promo-left {
+      padding: 30px;
+      align-items: center;
+      text-align: center;
+
+      .author {
+        justify-content: center;
+      }
+    }
+
+    .promo-right .promo-image {
+      min-height: 400px;
+    }
+  }
+
+  .big-banner .banner-inner {
+    padding: 20px;
+    gap: 20px;
+
+    h3 {
+      font-size: 28px !important;
+    }
+
+    .left-content .big-percent {
+      font-size: 140px;
+    }
+  }
+}
+
+@media (max-width: $bp-sm) {
+  .hero {
+    padding: 40px 0;
+
+    .hero-text h1 {
+      font-size: 34px;
+    }
+  }
+
+  .grid-4,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .promo .promo-card {
+    box-shadow: none;
+  }
+
+  .card-travel .card-media {
+    height: 420px;
+  }
+
+  .big-banner .banner-inner {
+    flex-direction: column;
+    gap: 20px;
+
+    .right-content {
+      align-items: center;
+    }
+  }
+
+  .testimonial {
+    padding: 30px;
   }
 }
