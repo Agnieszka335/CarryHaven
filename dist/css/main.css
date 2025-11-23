@@ -1562,8 +1562,7 @@ footer {
   margin: 20px 0;
 }
 
-input,
-textarea {
+.input {
   width: 100%;
   border: 2px solid #B92770;
   padding: 10px;
